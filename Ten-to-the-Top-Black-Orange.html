@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000"><meta name="description" content="Your music quiz, beautifully scored. Ten questions, rising points and one double-points joker.">
+<title>Ten to the Top — Black & Orange Edition</title>
+<style>:root{color-scheme:dark;--bg:#000000;--ink:#ffffff;--muted:#b8b8b8;--line:#383838;--accent:#ff7900;--mint:#ff7900;--lilac:#3b210b;--card:#111111;--sans:Arial,Helvetica,sans-serif}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;color:inherit;cursor:pointer}button:disabled{cursor:default;opacity:.48}button:focus-visible,a:focus-visible{outline:3px solid #ff7900;outline-offset:4px}a{color:inherit;text-decoration:none}[hidden]{display:none!important}.shell{max-width:1180px;margin:auto;padding:0 40px}.topbar{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding:24px 0}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:1.4px;font-size:13px}.brand small{display:block;font-size:9px;font-weight:500;letter-spacing:1.8px;margin-top:6px}.icon-button{border:1px solid #777777;background:none;border-radius:50%;width:35px;height:35px;font-weight:600}.intro{margin:46px 0 32px}.eyebrow{font-size:10px;font-weight:700;letter-spacing:2px;display:flex;gap:8px;align-items:center}.live-dot{width:6px;height:6px;background:var(--accent);border-radius:50%}h1{font-size:52px;letter-spacing:-2.6px;margin:15px 0 12px;line-height:1.02;font-weight:800}h1 span{display:block;font-weight:400;letter-spacing:-2.1px}.intro-copy{font-size:14px;color:var(--muted);margin:16px 0 0}.app-layout{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:38px;align-items:start}.scoreboard{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;padding:26px;box-shadow:0 5px 0 #191919}.round-heading{display:flex;justify-content:space-between;align-items:center;gap:8px}.pill{font-size:10px;letter-spacing:1.2px;padding:9px 11px;background:#252525;border-radius:6px;font-weight:700}.session-label{font-size:9px;letter-spacing:1.4px;color:var(--muted)}.score-display{position:relative;min-height:212px;padding:31px 2px 26px;overflow:hidden}.score-caption{font-size:10px;font-weight:700;letter-spacing:1.6px}.score-number{font-size:100px;line-height:1.04;font-weight:800;letter-spacing:-7px;position:relative;z-index:1;margin:4px 0 0;font-variant-numeric:tabular-nums}.points{font-size:9px;letter-spacing:2px;color:var(--muted);margin-left:6px}.record{width:184px;height:184px;border-radius:50%;position:absolute;right:0;top:16px;background:repeating-radial-gradient(circle at center,#080808 0px,#080808 3px,#333333 4px,#080808 5px);box-shadow:0 0 0 1px #555555;display:grid;place-items:center;transform:rotate(-17deg)}.record:after{content:'';width:6px;height:6px;border-radius:50%;background:var(--card);position:absolute}.record-label{background:var(--accent);border-radius:50%;width:79px;height:79px;text-align:center;display:flex;justify-content:center;align-items:center;flex-direction:column;color:#000000;font-size:31px;font-weight:800;padding-bottom:12px;line-height:1.1}.record-label span{font-size:6px;letter-spacing:1px;padding-top:8px}.track{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:6px;margin:6px 0 23px}.track-dot{height:29px;border-radius:5px;background:#252525;display:grid;place-items:center;font-size:10px;font-weight:600;color:#cccccc}.track-dot.current{outline:1.5px solid var(--ink);outline-offset:2px;color:var(--ink)}.track-dot.right{background:var(--mint);color:#000000}.track-dot.miss{background:#303030;color:#ffffff}.track-dot small{font-size:8px}.stats{display:grid;grid-template-columns:1fr 1.15fr;border:1px solid var(--line);border-radius:12px;overflow:hidden}.stats>div{padding:17px}.stat-title{display:block;font-size:8px;font-weight:700;letter-spacing:1.05px}.stats strong{display:block;font-size:22px;letter-spacing:-.5px;margin:8px 0 5px}.stats strong small{font-size:12px;font-weight:400;letter-spacing:0}.stat-note{display:block;font-size:10px;color:var(--muted);line-height:1.5}.joker{border:0;border-left:1px solid var(--line);background:#1b1b1b;padding:16px 12px;text-align:left;position:relative;display:flex;gap:10px;align-items:center}.joker-icon{font-size:25px;align-self:flex-start}.joker strong{font-size:19px}.joker[aria-pressed=true]{background:var(--lilac)}.joker:disabled{opacity:.7}.switch{margin-left:auto;width:25px;height:15px;background:#666666;border-radius:12px;position:relative;flex-shrink:0;align-self:flex-start;top:3px}.switch:after{content:'';position:absolute;top:3px;left:3px;width:9px;height:9px;border-radius:50%;background:white}.joker[aria-pressed=true] .switch{background:#ff7900}.joker[aria-pressed=true] .switch:after{left:13px;background:#000000}.feedback{min-height:52px;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);line-height:1.5;text-align:center;padding:10px 0}.feedback.right{color:#ff9b40}.feedback.miss{color:#ffffff}.answer-buttons{display:grid;grid-template-columns:1fr 1fr;gap:10px}.answer{border:1px solid var(--line);border-radius:9px;padding:16px 12px;font-weight:700;font-size:12px;display:flex;justify-content:center;align-items:center;gap:9px;min-height:50px}.answer span{font-size:20px;line-height:14px}.wrong{background:#111111}.correct{background:var(--accent);border-color:var(--accent);color:#000000}.answer:not(:disabled):hover{filter:brightness(.96)}.bottom-actions{display:flex;justify-content:space-between;margin:18px 0 0;gap:10px}.text-button{border:0;background:none;padding:5px 0;font-size:10px;color:var(--muted);text-decoration:none}.text-button:hover{text-decoration:underline}.side-panel{padding:17px 0 0}.guide-heading{position:relative}.music-note{position:absolute;font-size:70px;color:var(--accent);right:0;top:5px;transform:rotate(-12deg)}.guide-heading h2{font-size:29px;line-height:1.15;font-weight:600;letter-spacing:-1.2px;margin:19px 0 15px}.guide-heading>p:last-child{max-width:280px;color:var(--muted);font-size:12px;line-height:1.8}.rules{list-style:none;padding:0;margin:28px 0}.rules li{display:flex;gap:15px;padding:17px 0;border-top:1px solid var(--line)}.rules li>span{color:var(--accent);font-size:10px;font-weight:700;padding-top:3px}.rules strong{font-size:12px}.rules p{margin:7px 0 0;font-size:11px;color:var(--muted);line-height:1.7}.high-note{border:1px solid #704018;border-radius:10px;background:#21160c;display:flex;gap:14px;align-items:center;padding:17px}.high-note>span{font-size:26px}.high-note strong{font-size:12px}.high-note p{font-size:10px;line-height:1.6;margin:6px 0 0;color:var(--muted)}footer{display:flex;justify-content:space-between;align-items:center;padding:30px 0 24px;margin-top:25px;border-top:1px solid var(--line);font-size:9px;color:var(--muted);gap:15px}footer>div{display:flex;gap:15px;align-items:center}.results{padding:10px 0;text-align:center}.result-kicker{font-size:9px;letter-spacing:2px;color:#ff7900}.results h2{font-size:26px;letter-spacing:-1px;margin:10px 0}.results p{font-size:12px;color:var(--muted);line-height:1.6}.results button{width:100%;margin-top:18px}dialog{border:1px solid var(--line);border-radius:18px;padding:32px;max-width:450px;width:calc(100% - 32px);background:var(--card);color:var(--ink);max-height:85dvh;overflow:auto;box-shadow:0 12px 80px #00000066}dialog::backdrop{background:#000000bb;backdrop-filter:blur(3px)}dialog h2{letter-spacing:-1px;font-size:27px}dialog p{font-size:13px;line-height:1.8;color:var(--muted)}dialog .eyebrow{color:var(--accent)}dialog>.answer{width:100%;margin-top:23px}.close-dialog{position:absolute;right:18px;top:12px;background:none;border:none;font-size:28px;padding:6px}.dialog-actions{display:flex;gap:10px;margin-top:24px}.dialog-actions button{flex:1}
+@media(min-width:1000px){.intro h1 span{display:inline;margin-left:13px}.app-layout{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:58px}.scoreboard{padding:28px 32px}.side-panel{padding-top:27px}.record{right:14px}}
+@media(max-width:680px){.shell{padding:0 19px}.topbar{padding:18px 0}.brand{font-size:11px}.brand small{font-size:8px}.intro{margin:30px 0 25px}h1{font-size:40px;letter-spacing:-2px}h1 span{letter-spacing:-1.6px}.intro-copy{font-size:12px}.app-layout{grid-template-columns:1fr;gap:25px}.scoreboard{padding:21px 18px;border-radius:15px}.score-display{min-height:192px;padding-top:28px}.score-number{font-size:88px}.record{width:155px;height:155px;top:20px;right:5px}.record-label{width:68px;height:68px;font-size:27px}.track{gap:5px}.stats>div{padding:15px 11px}.stats{grid-template-columns:1fr 1.13fr}.joker{padding:15px 10px;gap:7px}.joker-icon{font-size:21px}.stats strong{font-size:21px}.joker strong{font-size:17px}.stat-title{font-size:7px}.stat-note{font-size:9px}.feedback{font-size:10px}.answer{font-size:11px;padding:16px 8px}.side-panel{padding:10px 8px}.guide-heading h2{font-size:28px}.guide-heading>p:last-child{max-width:270px}.rules{margin-bottom:18px}footer{margin-top:28px;flex-direction:column;align-items:flex-start;padding-bottom:max(24px,env(safe-area-inset-bottom));font-size:9px}footer>div{justify-content:space-between;width:100%}}
+@media(max-width:350px){.shell{padding:0 12px}.scoreboard{padding:17px 12px}.record{width:135px;height:135px;top:30px;right:0}.score-number{font-size:78px}.stats{grid-template-columns:1fr}.joker{border-left:0;border-top:1px solid var(--line)}h1{font-size:35px}}
+@media(prefers-reduced-motion:no-preference){.score-number{animation:arrive .3s ease-out}.answer{transition:filter .15s,transform .15s}.answer:active:not(:disabled){transform:scale(.98)}@keyframes arrive{from{opacity:.4;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}}
+
+.score-number{color:var(--accent)}.score-caption,.points{color:#ffffff}.joker-icon,.high-note>span{color:var(--accent)}
+</style>
+
+</head>
+<body>
+<div class="shell">
+<header class="topbar"><a class="brand" href="#" aria-label="Ten to the Top home"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cmVjdCB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgcng9IjI4IiBmaWxsPSIjMDAwMDAwIi8+PGNpcmNsZSBjeD0iNjQiIGN5PSI2NCIgcj0iNDUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzU1NTU1NSIgc3Ryb2tlLXdpZHRoPSIyIi8+PGNpcmNsZSBjeD0iNjQiIGN5PSI2NCIgcj0iMzUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzU1NTU1NSIgc3Ryb2tlLXdpZHRoPSIyIi8+PGNpcmNsZSBjeD0iNjQiIGN5PSI2NCIgcj0iMjYiIGZpbGw9IiNmZjc5MDAiLz48cGF0aCBkPSJNNjggNDB2MzdjMCAxMy0yMyAxMy0yMyAyIDAtOCAxMC0xMiAxNy04VjQ2bDI0LTZ2MTRsLTE4IDUiIGZpbGw9IiNmZmZmZmYiLz48L3N2Zz4K" alt="" width="42" height="42"><span>TEN TO THE TOP<small>BLACK &amp; ORANGE EDITION</small></span></a><button class="icon-button" id="help" aria-label="How to play">?</button></header>
+<main>
+<div class="intro"><p class="eyebrow"><span class="live-dot"></span> YOUR QUIZ. YOUR SCORE.</p><h1>Ten to the Top<span>Score Sheet</span></h1><p class="intro-copy">Know your music? Make every answer count.</p></div>
+<div class="app-layout">
+<section class="scoreboard" aria-label="Music quiz score sheet">
+<div class="round-heading"><span class="pill" id="round-label">QUESTION 01 / 10</span><span class="session-label" id="session-label">LET'S PLAY</span></div>
+<div class="score-display"><div class="score-caption">TOTAL SCORE</div><div class="score-number" id="score">0</div><span class="points">POINTS</span><div class="record" aria-hidden="true"><div class="record-label">10<span>TO THE TOP</span></div></div></div>
+<div class="track" id="track" aria-label="Question progress"></div>
+<div class="stats"><div><span class="stat-title" id="value-label">NEXT CORRECT ANSWER</span><strong id="value">1 <small>point</small></strong><span class="stat-note" id="streak-note">Build your winning streak</span></div><button class="joker" id="joker" aria-pressed="false"><span class="joker-icon" aria-hidden="true">✦</span><span><span class="stat-title">YOUR JOKER</span><strong id="joker-label">Double it</strong><span class="stat-note" id="joker-note">Use once • double points</span></span><span class="switch" aria-hidden="true"></span></button></div>
+<div class="feedback" id="feedback" role="status" aria-live="polite">Mark your answer to start the round.</div>
+<div class="answer-buttons" id="answer-buttons"><button id="wrong" class="answer wrong"><span aria-hidden="true">×</span> Wrong answer</button><button id="correct" class="answer correct"><span aria-hidden="true">✓</span> Correct answer</button></div>
+<div class="results" id="results" hidden><span class="result-kicker">THAT'S A WRAP</span><h2 id="result-title">Round complete!</h2><p id="result-text"></p><button id="play-again" class="answer correct">Start a new round <span aria-hidden="true">↗</span></button></div>
+<div class="bottom-actions"><button id="undo" class="text-button" disabled>← Back / correct previous</button><button id="reset" class="text-button">↻ Clear & reset</button></div>
+</section>
+<aside class="side-panel"><div class="guide-heading"><span class="music-note" aria-hidden="true">♫</span><p class="eyebrow">PLAY IT YOUR WAY</p><h2>A little rhythm.<br>A winning streak.</h2><p>Your companion for a ten-question music quiz. You supply the questions; we keep the score.</p></div><ol class="rules"><li><span>01</span><div><strong>Find your groove</strong><p>Correct answers earn 1, then 2, then 3 points. Keep the streak going to score more.</p></div></li><li><span>02</span><div><strong>Miss a beat?</strong><p>A wrong answer earns zero. Your next correct answer starts again at 1 point.</p></div></li><li><span>03</span><div><strong>Drop your joker</strong><p>Double one answer. Right or wrong, that uses your joker. Still unused? It activates on question 10.</p></div></li></ol><div class="high-note"><span aria-hidden="true">✦</span><div><strong>Go for the perfect 65.</strong><p>Ten correct answers + your joker on the last question.</p></div></div></aside>
+</div>
+</main>
+<footer><span>Made for music lovers. Built for quiz night.</span><div><span id="save-status">Progress saved on this device</span><button id="privacy" class="text-button">Privacy</button></div></footer>
+</div>
+<dialog id="help-dialog" aria-labelledby="help-title"><button class="close-dialog" data-close aria-label="Close instructions">×</button><p class="eyebrow">THE RULES</p><h2 id="help-title">Your ten-question set.</h2><p>This is a manual score sheet for your own music quiz. It does not play music or supply questions.</p><p>Consecutive correct answers earn 1, 2, 3… points. A wrong answer earns zero and resets the next answer to 1 point.</p><p>Activate your joker before answering to double that answer's points. A wrong answer also consumes the joker. If unused, it activates automatically on question 10.</p><p>Made a mistake? Use Back / correct previous to return to the last question and enter its answer again. Your round is saved locally on this device.</p><button class="answer correct" data-close>Let's play</button></dialog>
+<dialog id="reset-dialog" aria-labelledby="reset-title"><p class="eyebrow">FRESH START</p><h2 id="reset-title">Start a new round?</h2><p>This clears the current score and all ten answers.</p><div class="dialog-actions"><button class="answer wrong" data-close>Keep playing</button><button id="confirm-reset" class="answer correct">Clear & start</button></div></dialog>
+<dialog id="privacy-dialog" aria-labelledby="privacy-title"><button class="close-dialog" data-close aria-label="Close privacy information">×</button><p class="eyebrow">YOUR DATA</p><h2 id="privacy-title">A score sheet. That's all.</h2><p>The app has no accounts, ads, analytics or tracking. Answers and the score are stored on your device so you can resume your round.</p><p>Clear & reset removes the current round. Clearing your browser's site data or the Android app's storage removes all saved progress.</p><p>The Android app works entirely offline and requests no device permissions. When you use the website, your hosting provider may process normal connection information, such as your IP address, to serve the pages.</p><button class="answer correct" data-close>Got it</button></dialog>
+<noscript><p>This score sheet needs JavaScript enabled to calculate your score.</p></noscript>
+<script>(function (root) {
+  'use strict';
+  const MAX = 10;
+  function initial() { return { answers: [], armed: false }; }
+  function summary(state) {
+    let score = 0, value = 1, jokerUsed = false;
+    state.answers.forEach(answer => {
+      if (answer.correct) { score += value * (answer.joker ? 2 : 1); value++; }
+      else value = 1;
+      if (answer.joker) jokerUsed = true;
+    });
+    const complete = state.answers.length === MAX;
+    return { score, value, jokerUsed, complete, question: Math.min(MAX, state.answers.length + 1),
+      active: !complete && !jokerUsed && (state.armed || state.answers.length === MAX - 1),
+      correct: state.answers.filter(a => a.correct).length };
+  }
+  function transition(state, action) {
+    const info = summary(state);
+    if (action.type === 'reset') return initial();
+    if (action.type === 'undo') return { answers: state.answers.slice(0, -1), armed: Boolean(state.answers.at(-1)?.joker) };
+    if (action.type === 'joker' && !info.jokerUsed && !info.complete && info.question !== MAX)
+      return { ...state, armed: !state.armed };
+    if (action.type === 'answer' && !info.complete && typeof action.correct === 'boolean')
+      return { answers: [...state.answers, { correct: action.correct, joker: info.active }], armed: false };
+    return state;
+  }
+  function restore(text) {
+    try {
+      const input = JSON.parse(text);
+      if (!input || !Array.isArray(input.answers) || input.answers.length > MAX || typeof input.armed !== 'boolean') return initial();
+      let state = initial();
+      for (const entry of input.answers) {
+        if (!entry || typeof entry.correct !== 'boolean' || typeof entry.joker !== 'boolean') return initial();
+        const info = summary(state);
+        if ((entry.joker && info.jokerUsed) || (info.question === MAX && !info.jokerUsed && !entry.joker)) return initial();
+        state = { answers: [...state.answers, { correct: entry.correct, joker: entry.joker }], armed: false };
+      }
+      return { ...state, armed: !summary(state).jokerUsed && !summary(state).complete && input.armed };
+    } catch { return initial(); }
+  }
+  const api = { MAX, initial, summary, transition, restore };
+  if (typeof module !== 'undefined' && module.exports) module.exports = api;
+  else root.ScoreGame = api;
+})(globalThis);
+</script><script>'use strict';
+const game = window.ScoreGame;
+const key = 'ten-to-the-top-round-v1';
+let state = game.initial();
+let storageAvailable = true;
+try { state = game.restore(localStorage.getItem(key)); } catch { storageAvailable = false; }
+const $ = id => document.getElementById(id);
+let locked = false, unlockTimer;
+function save() {
+  try { localStorage.setItem(key, JSON.stringify(state)); } catch { storageAvailable = false; }
+  $('save-status').textContent = storageAvailable ? 'Progress saved on this device' : 'Progress cannot be saved in this browser';
+}
+function render() {
+  const info = game.summary(state);
+  $('score').textContent = info.score;
+  $('round-label').textContent = info.complete ? 'ALL 10 QUESTIONS COMPLETE' : `QUESTION ${String(info.question).padStart(2, '0')} / 10`;
+  $('session-label').textContent = info.complete ? 'NICE SET' : state.answers.length ? 'KEEP THE RHYTHM' : "LET'S PLAY";
+  $('value-label').textContent = info.complete ? 'CORRECT ANSWERS' : 'NEXT CORRECT ANSWER';
+  $('value').replaceChildren();
+  $('value').append(document.createTextNode(info.complete ? `${info.correct} ` : `${info.value * (info.active ? 2 : 1)} `));
+  const unit = document.createElement('small'); unit.textContent = info.complete ? '/ 10' : (info.value * (info.active ? 2 : 1) === 1 ? 'point' : 'points'); $('value').append(unit);
+  $('streak-note').textContent = info.complete ? `${info.score} points in this round` : info.active ? 'Joker doubles this answer' : info.value > 1 ? 'You’re on a winning streak' : 'Build your winning streak';
+  $('joker').setAttribute('aria-pressed', String(info.active));
+  $('joker').disabled = info.complete || info.jokerUsed || info.question === 10 || locked;
+  $('joker-label').textContent = info.jokerUsed ? 'Played' : info.active ? 'Joker active' : info.complete ? 'Round over' : 'Double it';
+  $('joker-note').textContent = info.jokerUsed ? 'One joker per round' : info.question === 10 && !info.complete ? 'Auto-play on question 10' : info.active ? 'Next answer • double points' : 'Use once • double points';
+  const track = $('track'); track.replaceChildren();
+  state.answers.forEach((a, i) => addTrack(i + 1, a.correct ? 'right' : 'miss', `${a.correct ? '✓' : '×'}${a.joker ? '✦' : ''}`, `Question ${i+1}: ${a.correct ? 'correct' : 'wrong'}${a.joker ? ', joker played' : ''}`));
+  for (let i = state.answers.length; i < 10; i++) addTrack(i+1, i === state.answers.length ? 'current' : '', String(i+1), `Question ${i+1}: ${i === state.answers.length ? 'current' : 'not answered'}`);
+  function addTrack(n, cls, text, label) { const el = document.createElement('span'); el.className = `track-dot ${cls}`; el.textContent=text; el.setAttribute('aria-label', label); if (cls === 'current') el.setAttribute('aria-current','step'); track.append(el); }
+  $('answer-buttons').hidden = info.complete; $('results').hidden = !info.complete;
+  $('correct').disabled = locked || info.complete; $('wrong').disabled = locked || info.complete;
+  $('undo').disabled = !state.answers.length || locked;
+  $('result-title').textContent = info.score >= 45 ? 'You hit the high notes!' : info.score >= 30 ? 'A great set!' : 'Every round builds rhythm.';
+  $('result-text').textContent = `${info.correct} of 10 correct · ${info.score} points. ${info.score === 65 ? 'A perfect round. Take a bow.' : 'Ready for another music quiz?'}`;
+  const last = state.answers.at(-1);
+  $('feedback').className = `feedback ${last ? last.correct ? 'right' : 'miss' : ''}`;
+  $('feedback').textContent = info.complete ? 'Round complete — all ten answers recorded.' : last ? `${last.correct ? '✓ Correct!' : '× Wrong — back to 1 point.'}${last.joker ? ' Joker played.' : ''}` : 'Mark your answer to start the round.';
+  save();
+}
+function answer(correct) {
+  if (locked || game.summary(state).complete || $('reset-dialog').open) return;
+  // Only the unlock UI uses a timer; scoring and advancement happen together.
+  locked = true;
+  state = game.transition(state, {type:'answer', correct}); render();
+  clearTimeout(unlockTimer);
+  unlockTimer = setTimeout(() => { locked = false; render(); if (game.summary(state).complete) $('play-again').focus(); }, 450);
+}
+$('correct').addEventListener('click', () => answer(true));
+$('wrong').addEventListener('click', () => answer(false));
+$('joker').addEventListener('click', () => { if (!locked) {state = game.transition(state, {type:'joker'}); render();} });
+$('undo').addEventListener('click', () => { if (!locked) {state = game.transition(state, {type:'undo'}); render();} });
+$('reset').addEventListener('click', () => $('reset-dialog').showModal());
+$('play-again').addEventListener('click', () => $('reset-dialog').showModal());
+$('confirm-reset').addEventListener('click', () => { clearTimeout(unlockTimer); locked = false; state = game.initial(); render(); $('reset-dialog').close(); $('correct').focus(); });
+$('help').addEventListener('click', () => $('help-dialog').showModal());
+$('privacy').addEventListener('click', () => $('privacy-dialog').showModal());
+document.querySelectorAll('[data-close]').forEach(button => button.addEventListener('click', () => button.closest('dialog').close()));
+window.addEventListener('pagehide', () => clearTimeout(unlockTimer));
+window.addEventListener('pageshow', () => { locked = false; render(); });
+render();
+if ('serviceWorker' in navigator && location.protocol === 'https:' && location.hostname !== 'appassets.androidplatform.net') navigator.serviceWorker.register('sw.js').catch(() => {});
+</script></body></html>
