@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en" data-premium-preview="true">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000"><meta name="description" content="BEATSTREAK music quiz tracker. Independent music quiz scorecard for listeners playing along with Ten to the Top.">
+<title>BEATSTREAK Premium — Round Results Preview</title>
+<style>:root{color-scheme:dark;--bg:#000000;--ink:#ffffff;--muted:#b8b8b8;--line:#383838;--accent:#ff7900;--mint:#ff7900;--lilac:#3b210b;--card:#111111;--sans:Arial,Helvetica,sans-serif}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;color:inherit;cursor:pointer}button:disabled{cursor:default;opacity:.48}button:focus-visible,a:focus-visible{outline:3px solid #ff7900;outline-offset:4px}a{color:inherit;text-decoration:none}[hidden]{display:none!important}.shell{max-width:1180px;margin:auto;padding:0 40px}.topbar{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding:24px 0}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:1.4px;font-size:13px}.brand small{display:block;font-size:9px;font-weight:500;letter-spacing:1.8px;margin-top:6px}.icon-button{border:1px solid #777777;background:none;border-radius:50%;width:35px;height:35px;font-weight:600}.intro{margin:46px 0 32px}.eyebrow{font-size:10px;font-weight:700;letter-spacing:2px;display:flex;gap:8px;align-items:center}.live-dot{width:6px;height:6px;background:var(--accent);border-radius:50%}h1{font-size:52px;letter-spacing:-2.6px;margin:15px 0 12px;line-height:1.02;font-weight:800}h1 span{display:block;font-weight:400;letter-spacing:-2.1px}.intro-copy{font-size:14px;color:var(--muted);margin:16px 0 0}.app-layout{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:38px;align-items:start}.scoreboard{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;padding:26px;box-shadow:0 5px 0 #191919}.round-heading{display:flex;justify-content:space-between;align-items:center;gap:8px}.pill{font-size:10px;letter-spacing:1.2px;padding:9px 11px;background:#252525;border-radius:6px;font-weight:700}.session-label{font-size:9px;letter-spacing:1.4px;color:var(--muted)}.score-display{position:relative;min-height:212px;padding:31px 2px 26px;overflow:hidden}.score-caption{font-size:10px;font-weight:700;letter-spacing:1.6px}.score-number{font-size:100px;line-height:1.04;font-weight:800;letter-spacing:-7px;position:relative;z-index:1;margin:4px 0 0;font-variant-numeric:tabular-nums}.points{font-size:9px;letter-spacing:2px;color:var(--muted);margin-left:6px}.record{width:184px;height:184px;border-radius:50%;position:absolute;right:0;top:16px;background:repeating-radial-gradient(circle at center,#080808 0px,#080808 3px,#333333 4px,#080808 5px);box-shadow:0 0 0 1px #555555;display:grid;place-items:center;transform:rotate(-17deg)}.record:after{content:'';width:6px;height:6px;border-radius:50%;background:var(--card);position:absolute}.record-label{background:var(--accent);border-radius:50%;width:79px;height:79px;text-align:center;display:flex;justify-content:center;align-items:center;flex-direction:column;color:#000000;font-size:31px;font-weight:800;padding-bottom:12px;line-height:1.1}.record-label span{font-size:6px;letter-spacing:1px;padding-top:8px}.track{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:6px;margin:6px 0 23px}.track-dot{height:29px;border-radius:5px;background:#252525;display:grid;place-items:center;font-size:10px;font-weight:600;color:#cccccc}.track-dot.current{outline:1.5px solid var(--ink);outline-offset:2px;color:var(--ink)}.track-dot.right{background:var(--mint);color:#000000}.track-dot.miss{background:#303030;color:#ffffff}.track-dot small{font-size:8px}.stats{display:grid;grid-template-columns:1fr 1.15fr;border:1px solid var(--line);border-radius:12px;overflow:hidden}.stats>div{padding:17px}.stat-title{display:block;font-size:8px;font-weight:700;letter-spacing:1.05px}.stats strong{display:block;font-size:22px;letter-spacing:-.5px;margin:8px 0 5px}.stats strong small{font-size:12px;font-weight:400;letter-spacing:0}.stat-note{display:block;font-size:10px;color:var(--muted);line-height:1.5}.joker{border:0;border-left:1px solid var(--line);background:#1b1b1b;padding:16px 12px;text-align:left;position:relative;display:flex;gap:10px;align-items:center}.joker-icon{font-size:25px;align-self:flex-start}.joker strong{font-size:19px}.joker[aria-pressed=true]{background:var(--lilac)}.joker:disabled{opacity:.7}.switch{margin-left:auto;width:25px;height:15px;background:#666666;border-radius:12px;position:relative;flex-shrink:0;align-self:flex-start;top:3px}.switch:after{content:'';position:absolute;top:3px;left:3px;width:9px;height:9px;border-radius:50%;background:white}.joker[aria-pressed=true] .switch{background:#ff7900}.joker[aria-pressed=true] .switch:after{left:13px;background:#000000}.feedback{min-height:52px;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);line-height:1.5;text-align:center;padding:10px 0}.feedback.right{color:#ff9b40}.feedback.miss{color:#ffffff}.answer-buttons{display:grid;grid-template-columns:1fr 1fr;gap:10px}.answer{border:1px solid var(--line);border-radius:9px;padding:16px 12px;font-weight:700;font-size:12px;display:flex;justify-content:center;align-items:center;gap:9px;min-height:50px}.answer span{font-size:20px;line-height:14px}.wrong{background:#111111}.correct{background:var(--accent);border-color:var(--accent);color:#000000}.answer:not(:disabled):hover{filter:brightness(.96)}.bottom-actions{display:flex;justify-content:space-between;margin:18px 0 0;gap:10px}.text-button{border:0;background:none;padding:5px 0;font-size:10px;color:var(--muted);text-decoration:none}.text-button:hover{text-decoration:underline}.side-panel{padding:17px 0 0}.guide-heading{position:relative}.music-note{position:absolute;font-size:70px;color:var(--accent);right:0;top:5px;transform:rotate(-12deg)}.guide-heading h2{font-size:29px;line-height:1.15;font-weight:600;letter-spacing:-1.2px;margin:19px 0 15px}.guide-heading>p:last-child{max-width:280px;color:var(--muted);font-size:12px;line-height:1.8}.rules{list-style:none;padding:0;margin:28px 0}.rules li{display:flex;gap:15px;padding:17px 0;border-top:1px solid var(--line)}.rules li>span{color:var(--accent);font-size:10px;font-weight:700;padding-top:3px}.rules strong{font-size:12px}.rules p{margin:7px 0 0;font-size:11px;color:var(--muted);line-height:1.7}.high-note{border:1px solid #704018;border-radius:10px;background:#21160c;display:flex;gap:14px;align-items:center;padding:17px}.high-note>span{font-size:26px}.high-note strong{font-size:12px}.high-note p{font-size:10px;line-height:1.6;margin:6px 0 0;color:var(--muted)}footer{display:flex;justify-content:space-between;align-items:center;padding:30px 0 24px;margin-top:25px;border-top:1px solid var(--line);font-size:9px;color:var(--muted);gap:15px}footer>div{display:flex;gap:15px;align-items:center}.results{padding:10px 0;text-align:center}.result-kicker{font-size:9px;letter-spacing:2px;color:#ff7900}.results h2{font-size:26px;letter-spacing:-1px;margin:10px 0}.results p{font-size:12px;color:var(--muted);line-height:1.6}.results button{width:100%;margin-top:18px}dialog{border:1px solid var(--line);border-radius:18px;padding:32px;max-width:450px;width:calc(100% - 32px);background:var(--card);color:var(--ink);max-height:85dvh;overflow:auto;box-shadow:0 12px 80px #00000066}dialog::backdrop{background:#000000bb;backdrop-filter:blur(3px)}dialog h2{letter-spacing:-1px;font-size:27px}dialog p{font-size:13px;line-height:1.8;color:var(--muted)}dialog .eyebrow{color:var(--accent)}dialog>.answer{width:100%;margin-top:23px}.close-dialog{position:absolute;right:18px;top:12px;background:none;border:none;font-size:28px;padding:6px}.dialog-actions{display:flex;gap:10px;margin-top:24px}.dialog-actions button{flex:1}
+@media(min-width:1000px){.intro h1 span{display:inline;margin-left:13px}.app-layout{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:58px}.scoreboard{padding:28px 32px}.side-panel{padding-top:27px}.record{right:14px}}
+@media(max-width:680px){.shell{padding:0 19px}.topbar{padding:18px 0}.brand{font-size:11px}.brand small{font-size:8px}.intro{margin:30px 0 25px}h1{font-size:40px;letter-spacing:-2px}h1 span{letter-spacing:-1.6px}.intro-copy{font-size:12px}.app-layout{grid-template-columns:1fr;gap:25px}.scoreboard{padding:21px 18px;border-radius:15px}.score-display{min-height:192px;padding-top:28px}.score-number{font-size:88px}.record{width:155px;height:155px;top:20px;right:5px}.record-label{width:68px;height:68px;font-size:27px}.track{gap:5px}.stats>div{padding:15px 11px}.stats{grid-template-columns:1fr 1.13fr}.joker{padding:15px 10px;gap:7px}.joker-icon{font-size:21px}.stats strong{font-size:21px}.joker strong{font-size:17px}.stat-title{font-size:7px}.stat-note{font-size:9px}.feedback{font-size:10px}.answer{font-size:11px;padding:16px 8px}.side-panel{padding:10px 8px}.guide-heading h2{font-size:28px}.guide-heading>p:last-child{max-width:270px}.rules{margin-bottom:18px}footer{margin-top:28px;flex-direction:column;align-items:flex-start;padding-bottom:max(24px,env(safe-area-inset-bottom));font-size:9px}footer>div{justify-content:space-between;width:100%}}
+@media(max-width:350px){.shell{padding:0 12px}.scoreboard{padding:17px 12px}.record{width:135px;height:135px;top:30px;right:0}.score-number{font-size:78px}.stats{grid-template-columns:1fr}.joker{border-left:0;border-top:1px solid var(--line)}h1{font-size:35px}}
+@media(prefers-reduced-motion:no-preference){.score-number{animation:arrive .3s ease-out}.answer{transition:filter .15s,transform .15s}.answer:active:not(:disabled){transform:scale(.98)}@keyframes arrive{from{opacity:.4;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}}
+
+.score-number{color:var(--accent)}.score-caption,.points{color:#ffffff}.joker-icon,.high-note>span{color:var(--accent)}
+
+/* BEATSTREAK identity and visible independence notice. */
+h1{font-size:46px}h1 span{font-size:32px;letter-spacing:-1.2px}.disclaimer{font-size:11px;line-height:1.7;color:#cccccc;text-align:center;border-top:1px solid var(--line);padding-top:17px;margin:18px 0 0}@media(min-width:1000px){.intro h1 span{display:block;margin-left:0;margin-top:7px}}@media(max-width:680px){h1{font-size:38px}h1 span{font-size:27px}.brand{letter-spacing:1.2px}.disclaimer{font-size:10px}}
+
+/* Premium preview, accessible match setup and local score history. */
+.mode-bar{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 22px}.mode-bar button{border:1px solid var(--line);border-radius:8px;background:#141414;color:#fff;padding:12px 14px;font-size:12px}.mode-bar button[aria-pressed=true]{border-color:var(--accent);color:var(--accent)}.premium-tag{font-size:8px;letter-spacing:.8px;color:var(--accent);margin-left:5px}.premium-notice{padding:12px 15px;margin:0 0 15px;border:1px solid #704018;background:#21160c;color:#ffb36b;font-size:11px;line-height:1.5;border-radius:8px}.contestants{display:grid;grid-template-columns:minmax(0,1fr) 24px minmax(0,1fr);align-items:center;gap:8px;margin-bottom:23px}.contestant{padding:13px;border:1px solid var(--line);border-radius:9px;min-width:0}.contestant.active{border-color:var(--accent);background:#21160c}.contestant small{display:block;font-size:8px;letter-spacing:1.4px;color:var(--muted)}.contestant strong{display:block;font-size:15px;overflow-wrap:anywhere;margin:7px 0}.contestant>span{font-size:12px;color:var(--accent)}.versus{font-size:9px;font-weight:700;text-align:center;color:var(--muted)}.round-heading{flex-wrap:wrap}.session-label{overflow-wrap:anywhere;max-width:100%;line-height:1.6}#duel-form label{display:block;font-size:12px;margin:16px 0 8px}#duel-form input{background:#222;border:1px solid #666;color:white;border-radius:7px;padding:13px;font:inherit;width:100%}#duel-form>.answer{width:100%;margin-top:18px}#name-error{color:#ffb36b}.history-dialog{max-width:580px}.history-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:18px 0}.history-stats>div{border:1px solid var(--line);padding:12px 8px;border-radius:8px;text-align:center}.history-stats strong{display:block;font-size:21px;color:var(--accent)}.history-stats small{font-size:10px;color:var(--muted)}.history-entry{border-top:1px solid var(--line);padding:16px 0}.history-entry h3{font-size:14px;line-height:1.6;margin:5px 0;overflow-wrap:anywhere}.history-entry small{font-size:10px;color:var(--muted)}.history-entry p{margin:5px 0;font-size:12px}.history-entry .winner{color:var(--accent)}.history-dialog .dialog-actions{flex-wrap:wrap}@media(max-width:680px){.mode-bar{gap:7px}.mode-bar button{font-size:10px;padding:11px 9px}.premium-tag{font-size:7px}.contestant{padding:11px 8px}.contestant strong{font-size:13px}.history-stats strong{font-size:18px}}
+
+.trial-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border:1px solid #704018;border-radius:8px;margin-bottom:12px;font-size:11px;line-height:1.6;color:#ffb36b}.trial-bar button{color:#ffffff;flex-shrink:0}#trial-limitation{font-size:11px;color:#cccccc}
+
+/* Keep both rounds visible before the final reset action. */
+.final-results{border:1px solid var(--line);border-radius:10px;margin:20px 0 8px;padding:0 12px;text-align:left}.final-results table{width:100%;border-collapse:collapse;table-layout:fixed}.final-results caption{text-align:left;padding:15px 0;color:var(--accent);font-size:11px;font-weight:700;letter-spacing:.4px}.final-results th,.final-results td{padding:13px 5px;border-top:1px solid var(--line);font-size:12px;line-height:1.5;overflow-wrap:anywhere}.final-results thead th{font-size:9px;letter-spacing:.3px;color:var(--muted);text-align:left}.final-results th:first-child{width:16%}.final-results th:nth-child(2){width:42%}.final-results td:nth-child(3){color:var(--accent);font-size:20px;font-weight:800;font-variant-numeric:tabular-nums}.final-results td:nth-child(4){font-size:11px}.results .final-results-note{font-size:10px;line-height:1.7;margin:13px 0 16px;color:#ccc}.results h2:focus{outline:none}@media(max-width:360px){.final-results{padding:0 7px}.final-results th,.final-results td{font-size:10px;padding:10px 3px}.final-results thead th{font-size:8px}.final-results td:nth-child(3){font-size:18px}}
+</style>
+
+</head>
+<body>
+<div class="shell">
+<header class="topbar"><a class="brand" href="#" aria-label="BEATSTREAK home"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cmVjdCB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgcng9IjI4IiBmaWxsPSIjMDAwMDAwIi8+PGNpcmNsZSBjeD0iNjQiIGN5PSI2NCIgcj0iNDUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzU1NTU1NSIgc3Ryb2tlLXdpZHRoPSIyIi8+PGNpcmNsZSBjeD0iNjQiIGN5PSI2NCIgcj0iMzUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzU1NTU1NSIgc3Ryb2tlLXdpZHRoPSIyIi8+PGNpcmNsZSBjeD0iNjQiIGN5PSI2NCIgcj0iMjYiIGZpbGw9IiNmZjc5MDAiLz48cGF0aCBkPSJNNjggNDB2MzdjMCAxMy0yMyAxMy0yMyAyIDAtOCAxMC0xMiAxNy04VjQ2bDI0LTZ2MTRsLTE4IDUiIGZpbGw9IiNmZmZmZmYiLz48L3N2Zz4K" alt="" width="42" height="42"><span>BEATSTREAK<small>MUSIC QUIZ TRACKER</small></span></a><button class="icon-button" id="help" aria-label="How to play">?</button></header>
+<main>
+<div class="intro"><p class="eyebrow"><span class="live-dot"></span> YOUR QUIZ. YOUR SCORE.</p><h1>BEATSTREAK<span>music quiz tracker</span></h1><p class="intro-copy">Independent music quiz scorecard</p></div>
+<div class="premium-notice" id="preview-notice" hidden>TRIAL PREVIEW · No payments enabled. Trial and history stay on this device.</div>
+<div class="trial-bar"><span id="trial-status">Try Premium: 5 games or 5 days</span><button id="trial-open" class="text-button">Try Premium</button></div>
+<nav class="mode-bar" aria-label="Game modes"><button id="solo-mode" aria-pressed="true">Solo scorecard</button><button id="duel-mode" aria-pressed="false">Head to head <span class="premium-tag">PREMIUM</span></button><button id="history-open">Score history <span class="premium-tag">PREMIUM</span></button></nav>
+<div class="app-layout">
+<section class="scoreboard" aria-label="Music quiz score sheet">
+<div id="contestant-board" class="contestants" hidden><div id="player-one" class="contestant"><small>ROUND 1</small><strong id="player-one-name">Player 1</strong><span id="player-one-score">0 points</span></div><span class="versus">VS</span><div id="player-two" class="contestant"><small>ROUND 2</small><strong id="player-two-name">Player 2</strong><span id="player-two-score">0 points</span></div></div>
+<div class="round-heading"><span class="pill" id="round-label">QUESTION 01 / 10</span><span class="session-label" id="session-label">LET'S PLAY</span></div>
+<div class="score-display"><div class="score-caption">TOTAL SCORE</div><div class="score-number" id="score">0</div><span class="points">POINTS</span><div class="record" aria-hidden="true"><div class="record-label">10<span>BEATSTREAK</span></div></div></div>
+<div class="track" id="track" aria-label="Question progress"></div>
+<div class="stats"><div><span class="stat-title" id="value-label">NEXT CORRECT ANSWER</span><strong id="value">1 <small>point</small></strong><span class="stat-note" id="streak-note">Build your winning streak</span></div><button class="joker" id="joker" aria-pressed="false"><span class="joker-icon" aria-hidden="true">✦</span><span><span class="stat-title">YOUR JOKER</span><strong id="joker-label">Double it</strong><span class="stat-note" id="joker-note">Use once • double points</span></span><span class="switch" aria-hidden="true"></span></button></div>
+<div class="feedback" id="feedback" role="status" aria-live="polite">Mark your answer to start the round.</div>
+<div class="answer-buttons" id="answer-buttons"><button id="wrong" class="answer wrong"><span aria-hidden="true">×</span> Wrong answer</button><button id="correct" class="answer correct"><span aria-hidden="true">✓</span> Correct answer</button></div>
+<div class="results" id="results" hidden><span class="result-kicker">THAT'S A WRAP</span><h2 id="result-title" tabindex="-1">Round complete!</h2><p id="result-text"></p><div id="final-results" class="final-results" hidden><table><caption>Both rounds · final scores</caption><thead><tr><th scope="col">Round</th><th scope="col">Contestant</th><th scope="col">Points</th><th scope="col">Correct</th></tr></thead><tbody><tr><th scope="row">1</th><td id="final-name-one"></td><td id="final-score-one"></td><td id="final-correct-one"></td></tr><tr><th scope="row">2</th><td id="final-name-two"></td><td id="final-score-two"></td><td id="final-correct-two"></td></tr></tbody></table><p class="final-results-note">Your results stay here until you choose to reset. Use Back to correct the previous answer.</p></div><button id="next-round" class="answer correct" hidden>Start Round 2 →</button><button id="play-again" class="answer correct">Start a new round <span aria-hidden="true">↗</span></button></div>
+<div class="bottom-actions"><button id="undo" class="text-button" disabled>← Back / correct previous</button><button id="reset" class="text-button">↻ Clear & reset</button></div>
+<p class="disclaimer">For listeners playing along with Ten to the Top. Not affiliated with or endorsed by the BBC.</p>
+</section>
+<aside class="side-panel"><div class="guide-heading"><span class="music-note" aria-hidden="true">♫</span><p class="eyebrow">PLAY IT YOUR WAY</p><h2>A little rhythm.<br>A winning streak.</h2><p>Your companion for a ten-question music quiz. You supply the questions; we keep the score.</p></div><ol class="rules"><li><span>01</span><div><strong>Find your groove</strong><p>Correct answers earn 1, then 2, then 3 points. Keep the streak going to score more.</p></div></li><li><span>02</span><div><strong>Miss a beat?</strong><p>A wrong answer earns zero. Your next correct answer starts again at 1 point.</p></div></li><li><span>03</span><div><strong>Drop your joker</strong><p>Double one answer. Right or wrong, that uses your joker. Still unused? It activates on question 10.</p></div></li></ol><div class="high-note"><span aria-hidden="true">✦</span><div><strong>Go for the perfect 65.</strong><p>Ten correct answers + your joker on the last question.</p></div></div></aside>
+</div>
+</main>
+<footer><span>Made for music lovers. Built for quiz night.</span><div><span id="save-status">Progress saved on this device</span><button id="privacy" class="text-button">Privacy</button></div></footer>
+</div>
+<dialog id="help-dialog" aria-labelledby="help-title"><button class="close-dialog" data-close aria-label="Close instructions">×</button><p class="eyebrow">THE RULES</p><h2 id="help-title">Your ten-question set.</h2><p>This is a manual score sheet for your own music quiz. It does not play music or supply questions.</p><p>Consecutive correct answers earn 1, 2, 3… points. A wrong answer earns zero and resets the next answer to 1 point.</p><p>Activate your joker before answering to double that answer's points. A wrong answer also consumes the joker. If unused, it activates automatically on question 10.</p><p>Premium head-to-head mode gives each contestant a separate ten-question round and one joker. Round 1 is for Player 1; Round 2 is for Player 2. The higher score wins, with equal scores shown as a draw. Back works across both rounds.</p><p>Made a mistake? Use Back / correct previous to return to the last question and enter its answer again. Your round is saved locally on this device.</p><button class="answer correct" data-close>Let's play</button></dialog>
+<dialog id="reset-dialog" aria-labelledby="reset-title"><p class="eyebrow">FRESH START</p><h2 id="reset-title">Start a new round?</h2><p>This clears the current round or match. Completed premium results already saved in history will be kept.</p><div class="dialog-actions"><button class="answer wrong" data-close>Keep playing</button><button id="confirm-reset" class="answer correct">Clear & start</button></div></dialog>
+<dialog id="privacy-dialog" aria-labelledby="privacy-title"><button class="close-dialog" data-close aria-label="Close privacy information">×</button><p class="eyebrow">YOUR DATA</p><h2 id="privacy-title">A score sheet. That's all.</h2><p>The app has no accounts, ads, analytics or tracking. Answers and the score are stored on your device so you can resume your round. In the premium preview, completed solo rounds and head-to-head matches are saved locally with contestant names and completion dates. Nothing is synced between devices.</p><p>Clear & reset removes the current round or match, but keeps saved history. Use Delete history in Score history to remove past results. Clearing site data or Android app storage removes all progress and history. Use Export CSV to keep a separate copy.</p><p>The Android app works entirely offline and requests no device permissions. When you use the website, your hosting provider may process normal connection information, such as your IP address, to serve the pages.</p><button class="answer correct" data-close>Got it</button></dialog>
+<dialog id="premium-dialog" aria-labelledby="premium-title"><button class="close-dialog" data-close aria-label="Close premium information">×</button><p class="eyebrow">BEATSTREAK PREMIUM</p><h2 id="premium-title">Two contestants. One winner.</h2><p>Premium adds a head-to-head match with Round 1 and Round 2, saved score history, personal bests, averages and CSV export.</p><p id="premium-trial-copy">Try Premium for five completed games or five days from activation, whichever comes first. A game means one solo round or a complete two-contestant match. No automatic charge.</p><p id="trial-limitation">This is a local trial preview. Payments are not connected, and clearing site data can reset this preview. The paid release needs account-based trial enforcement and verified billing.</p><p id="premium-message" role="status"></p><button id="start-trial" class="answer correct">Start free trial — no payment</button><p>After the trial, solo scoring stays free. Your saved results remain readable and exportable. New premium games and saving new results require an upgrade. Paid upgrades are not available in this preview.</p><button class="answer correct" data-close>Back to scorecard</button></dialog>
+<dialog id="duel-dialog" aria-labelledby="duel-title"><button class="close-dialog" data-close aria-label="Close match setup">×</button><p class="eyebrow">PREMIUM · HEAD TO HEAD</p><h2 id="duel-title">Meet the contestants.</h2><p>One contestant per round. Ten questions and one joker each. Starting replaces your current round or match.</p><form id="duel-form"><label for="name-one">Round 1 contestant</label><input id="name-one" name="playerOne" maxlength="30" required value="Player 1" autocomplete="off"><label for="name-two">Round 2 contestant</label><input id="name-two" name="playerTwo" maxlength="30" required value="Player 2" autocomplete="off"><p id="name-error" role="alert"></p><button type="submit" class="answer correct">Start Round 1 →</button></form></dialog>
+<dialog id="history-dialog" class="history-dialog" aria-labelledby="history-title"><button class="close-dialog" data-close aria-label="Close score history">×</button><p class="eyebrow">BEATSTREAK PREMIUM</p><h2 id="history-title">Your score history.</h2><p>Saved on this device only. Your saved results remain readable and exportable after the trial. Up to 250 completed rounds or matches; older results are removed as new ones are saved. Export to keep a backup.</p><div id="history-stats" class="history-stats"></div><div id="history-list"></div><p id="history-message" role="status"></p><div class="dialog-actions"><button id="export-history" class="answer correct">Export CSV</button><button id="clear-history" class="answer wrong">Delete history</button></div></dialog>
+<dialog id="delete-history-dialog" aria-labelledby="delete-history-title"><h2 id="delete-history-title">Delete saved history?</h2><p>This removes all completed results saved on this device. Your current round or match will stay.</p><div class="dialog-actions"><button class="answer wrong" data-close>Keep history</button><button id="confirm-delete-history" class="answer correct">Delete history</button></div></dialog>
+<noscript><p>This score sheet needs JavaScript enabled to calculate your score.</p></noscript>
+<script>(function (root) {
+  'use strict';
+  const MAX = 10;
+  function initial() { return { answers: [], armed: false }; }
+  function summary(state) {
+    let score = 0, value = 1, jokerUsed = false;
+    state.answers.forEach(answer => {
+      if (answer.correct) { score += value * (answer.joker ? 2 : 1); value++; }
+      else value = 1;
+      if (answer.joker) jokerUsed = true;
+    });
+    const complete = state.answers.length === MAX;
+    return { score, value, jokerUsed, complete, question: Math.min(MAX, state.answers.length + 1),
+      active: !complete && !jokerUsed && (state.armed || state.answers.length === MAX - 1),
+      correct: state.answers.filter(a => a.correct).length };
+  }
+  function transition(state, action) {
+    const info = summary(state);
+    if (action.type === 'reset') return initial();
+    if (action.type === 'undo') return { answers: state.answers.slice(0, -1), armed: Boolean(state.answers.at(-1)?.joker) };
+    if (action.type === 'joker' && !info.jokerUsed && !info.complete && info.question !== MAX)
+      return { ...state, armed: !state.armed };
+    if (action.type === 'answer' && !info.complete && typeof action.correct === 'boolean')
+      return { answers: [...state.answers, { correct: action.correct, joker: info.active }], armed: false };
+    return state;
+  }
+  function restore(text) {
+    try {
+      const input = JSON.parse(text);
+      if (!input || !Array.isArray(input.answers) || input.answers.length > MAX || typeof input.armed !== 'boolean') return initial();
+      let state = initial();
+      for (const entry of input.answers) {
+        if (!entry || typeof entry.correct !== 'boolean' || typeof entry.joker !== 'boolean') return initial();
+        const info = summary(state);
+        if ((entry.joker && info.jokerUsed) || (info.question === MAX && !info.jokerUsed && !entry.joker)) return initial();
+        state = { answers: [...state.answers, { correct: entry.correct, joker: entry.joker }], armed: false };
+      }
+      return { ...state, armed: !summary(state).jokerUsed && !summary(state).complete && input.armed };
+    } catch { return initial(); }
+  }
+  const api = { MAX, initial, summary, transition, restore };
+  if (typeof module !== 'undefined' && module.exports) module.exports = api;
+  else root.ScoreGame = api;
+})(globalThis);
+</script><script>(function(root){
+ 'use strict';
+ const game=typeof module!=='undefined'&&module.exports?require('./game.js'):root.ScoreGame;
+ function fresh(mode='solo',names=['Player 1','Player 2'],id){return {version:1,id:id||`${Date.now()}-${Math.random().toString(36).slice(2)}`,mode:mode==='duel'?'duel':'solo',names:names.map((n,i)=>String(n||`Player ${i+1}`).trim().slice(0,30)||`Player ${i+1}`).slice(0,2),round:0,rounds:[game.initial(),game.initial()]};}
+ function summary(s){const rounds=s.rounds.map(game.summary);const complete=s.mode==='duel'?rounds.every(r=>r.complete):rounds[0].complete;return {rounds,active:rounds[s.round],complete,winner:complete&&s.mode==='duel'?(rounds[0].score===rounds[1].score?'draw':rounds[0].score>rounds[1].score?0:1):null};}
+ function transition(s,a){
+  if(a.type==='next-round'){if(s.mode==='duel'&&s.round===0&&game.summary(s.rounds[0]).complete)return {...s,round:1};return s;}
+  let round=s.round,rounds=s.rounds.slice();
+  if(a.type==='undo'&&round===1&&rounds[1].answers.length===0){round=0;}
+  if(['answer','undo','joker'].includes(a.type)){
+   const next=game.transition(rounds[round],a);if(next===rounds[round]&&round===s.round)return s;
+   rounds[round]=next;return {...s,round,rounds};
+  }return s;
+ }
+ function restore(raw){
+  try{const s=typeof raw==='string'?JSON.parse(raw):raw;
+   if(!s||s.version!==1||!['solo','duel'].includes(s.mode)||!Array.isArray(s.names)||s.names.length!==2||s.names.some(n=>typeof n!=='string'||!n.trim()||n.length>30)||typeof s.id!=='string'||s.id.length>100||!s.id||![0,1].includes(s.round)||!Array.isArray(s.rounds)||s.rounds.length!==2)return null;
+   const rounds=s.rounds.map(r=>game.restore(JSON.stringify(r)));
+   // A malformed round must not silently turn into a seemingly valid saved score.
+   if(rounds.some((r,i)=>JSON.stringify(r)!==JSON.stringify(s.rounds[i])))return null;
+   if(s.mode==='solo'&&(s.round!==0||rounds[1].answers.length))return null;
+   if(s.mode==='duel'&&s.round===1&&!game.summary(rounds[0]).complete)return null;
+   if(s.round===0&&rounds[1].answers.length)return null;
+   return {...fresh(s.mode,s.names,s.id),round:s.round,rounds};
+  }catch{return null;}
+ }
+ function history(raw){try{const records=JSON.parse(raw);if(!Array.isArray(records))return [];return records.map(r=>{const session=restore(r.session);const date=new Date(r.finishedAt);return session&&summary(session).complete&&Number.isFinite(date.getTime())?{session,finishedAt:date.toISOString()}:null;}).filter(Boolean).slice(-250);}catch{return [];}}
+ function updateHistory(records,session,finishedAt=new Date().toISOString()){
+  const existing=records.find(r=>r.session.id===session.id);const rest=records.filter(r=>r.session.id!==session.id);
+  if(!summary(session).complete)return rest;
+  return [...rest,{session:JSON.parse(JSON.stringify(session)),finishedAt:existing?existing.finishedAt:finishedAt}].slice(-250);
+ }
+ const api={fresh,summary,transition,restore,history,updateHistory};
+ if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.BeatstreakSession=api;
+})(globalThis);
+</script><script>(function(root){
+ 'use strict';const DAYS=5,GOES=5,DAY=86400000;
+ function initial(){return {version:1,startedAt:null,lastSeen:0,used:[]};}
+ function restore(raw){try{const t=typeof raw==='string'?JSON.parse(raw):raw;if(!t||t.version!==1||!(t.startedAt===null||(Number.isFinite(t.startedAt)&&t.startedAt>=0))||!Number.isFinite(t.lastSeen)||t.lastSeen<0||!Array.isArray(t.used)||t.used.length>GOES||t.used.some(id=>typeof id!=='string'||!id||id.length>100)||new Set(t.used).size!==t.used.length)return null;if(t.startedAt===null&&(t.used.length||t.lastSeen))return null;return {version:1,startedAt:t.startedAt,lastSeen:t.lastSeen,used:t.used.slice()};}catch{return null;}}
+ function start(t,now=Date.now()){if(t.startedAt!==null)return t;return {version:1,startedAt:now,lastSeen:now,used:[]};}
+ function touch(t,now=Date.now()){return t.startedAt===null?t:{...t,lastSeen:Math.max(t.lastSeen,now)};}
+ function status(t,now=Date.now()){const effective=Math.max(now,t.lastSeen);const started=t.startedAt!==null;const expiresAt=started?t.startedAt+DAYS*DAY:null;const daysLeft=started?Math.max(0,Math.ceil((expiresAt-effective)/DAY)):DAYS;const goesLeft=Math.max(0,GOES-t.used.length);return {started,expiresAt,daysLeft,goesLeft,available:started&&effective<expiresAt&&goesLeft>0,expired:started&&(effective>=expiresAt||goesLeft===0)};}
+ function consume(t,id,now=Date.now()){if(t.used.includes(id))return touch(t,now);if(!status(t,now).available)return touch(t,now);return {...touch(t,now),used:[...t.used,id]};}
+ const api={DAYS,GOES,initial,restore,start,touch,status,consume};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.BeatstreakTrial=api;
+})(globalThis);
+</script><script>'use strict';
+const game = window.ScoreGame;
+const key = 'ten-to-the-top-round-v1';
+const sessions = window.BeatstreakSession;
+const sessionKey = 'beatstreak-session-v1';
+const historyKey = 'beatstreak-history-v1';
+// Preview builds are explicitly labelled and cannot accept real payment.
+// Hosted and Android production builds fail closed until verified billing exists.
+const premiumPreview = document.documentElement.dataset.premiumPreview === 'true';
+const trialRules = window.BeatstreakTrial;
+const trialKey = 'beatstreak-trial-v1';
+let trial = trialRules.initial();
+let trialStorageHealthy = true;
+let corruptTrial = false;
+try { const raw = localStorage.getItem(trialKey); if (raw !== null) { const savedTrial = trialRules.restore(raw); if (savedTrial) trial = savedTrial; else corruptTrial = true; } } catch { trialStorageHealthy = false; }
+const hasPremium = () => premiumPreview && trialStorageHealthy && !corruptTrial && trialRules.status(trial).available;
+const canFinishPremiumSession = () => hasPremium() || (premiumPreview && trial.used.includes(session.id));
+let session = sessions.fresh();
+let records = [];
+let resetMode = null;
+let state = game.initial();
+let storageAvailable = true;
+try {
+  const saved = sessions.restore(localStorage.getItem(sessionKey));
+  if (saved && (saved.mode === 'solo' || hasPremium() || (premiumPreview && trial.used.includes(saved.id)))) session = saved;
+  else session.rounds[0] = game.restore(localStorage.getItem(key));
+  records = sessions.history(localStorage.getItem(historyKey));
+  state = session.rounds[session.round];
+} catch { storageAvailable = false; }
+const $ = id => document.getElementById(id);
+let locked = false, unlockTimer;
+function save() {
+  try { localStorage.setItem(sessionKey, JSON.stringify(session)); if (session.mode === 'solo') localStorage.setItem(key, JSON.stringify(state)); } catch { storageAvailable = false; }
+  $('save-status').textContent = storageAvailable ? 'Progress saved on this device' : 'Progress cannot be saved in this browser';
+}
+function render() {
+  state = session.rounds[session.round];
+  const match = sessions.summary(session);
+  const info = match.active;
+  const duel = session.mode === 'duel';
+  $('preview-notice').hidden = !premiumPreview;
+  const trialInfo = trialRules.status(trial);
+  $('trial-status').textContent = corruptTrial ? 'Trial data unavailable — upgrade setup required' : trialInfo.started ? trialInfo.expired ? 'Free trial finished · solo scoring stays free' : `Premium trial: ${trialInfo.goesLeft} games left · ${trialInfo.daysLeft} days left` : 'Try Premium: 5 games or 5 days';
+  $('trial-open').textContent = trialInfo.expired ? 'Premium options' : trialInfo.started ? 'Trial details' : 'Try Premium';
+  $('solo-mode').setAttribute('aria-pressed', String(!duel));
+  $('duel-mode').setAttribute('aria-pressed', String(duel));
+  $('contestant-board').hidden = !duel;
+  for (let i = 0; i < 2; i++) {
+    const prefix = i ? 'player-two' : 'player-one';
+    $(prefix + '-name').textContent = session.names[i];
+    $(prefix + '-score').textContent = i === 1 && session.round === 0 ? 'Waiting for Round 2' : `${match.rounds[i].score} points`;
+    $(prefix).classList.toggle('active', i === session.round);
+  }
+  $('score').textContent = info.score;
+  $('round-label').textContent = info.complete ? 'ALL 10 QUESTIONS COMPLETE' : `QUESTION ${String(info.question).padStart(2, '0')} / 10`;
+  $('session-label').textContent = duel ? `ROUND ${session.round + 1} · ${session.names[session.round]}` : info.complete ? 'NICE SET' : state.answers.length ? 'KEEP THE RHYTHM' : "LET'S PLAY";
+  $('value-label').textContent = info.complete ? 'CORRECT ANSWERS' : 'NEXT CORRECT ANSWER';
+  $('value').replaceChildren();
+  $('value').append(document.createTextNode(info.complete ? `${info.correct} ` : `${info.value * (info.active ? 2 : 1)} `));
+  const unit = document.createElement('small'); unit.textContent = info.complete ? '/ 10' : (info.value * (info.active ? 2 : 1) === 1 ? 'point' : 'points'); $('value').append(unit);
+  $('streak-note').textContent = info.complete ? `${info.score} points in this round` : info.active ? 'Joker doubles this answer' : info.value > 1 ? 'You’re on a winning streak' : 'Build your winning streak';
+  $('joker').setAttribute('aria-pressed', String(info.active));
+  $('joker').disabled = info.complete || info.jokerUsed || info.question === 10 || locked;
+  $('joker-label').textContent = info.jokerUsed ? 'Played' : info.active ? 'Joker active' : info.complete ? 'Round over' : 'Double it';
+  $('joker-note').textContent = info.jokerUsed ? 'One joker per round' : info.question === 10 && !info.complete ? 'Auto-play on question 10' : info.active ? 'Next answer • double points' : 'Use once • double points';
+  const track = $('track'); track.replaceChildren();
+  state.answers.forEach((a, i) => addTrack(i + 1, a.correct ? 'right' : 'miss', `${a.correct ? '✓' : '×'}${a.joker ? '✦' : ''}`, `Question ${i+1}: ${a.correct ? 'correct' : 'wrong'}${a.joker ? ', joker played' : ''}`));
+  for (let i = state.answers.length; i < 10; i++) addTrack(i+1, i === state.answers.length ? 'current' : '', String(i+1), `Question ${i+1}: ${i === state.answers.length ? 'current' : 'not answered'}`);
+  function addTrack(n, cls, text, label) { const el = document.createElement('span'); el.className = `track-dot ${cls}`; el.textContent=text; el.setAttribute('aria-label', label); if (cls === 'current') el.setAttribute('aria-current','step'); track.append(el); }
+  $('answer-buttons').hidden = info.complete; $('results').hidden = !info.complete;
+  $('correct').disabled = locked || info.complete; $('wrong').disabled = locked || info.complete;
+  $('undo').disabled = (!state.answers.length && !(duel && session.round === 1)) || locked;
+  $('result-title').textContent = info.score >= 45 ? 'You hit the high notes!' : info.score >= 30 ? 'A great set!' : 'Every round builds rhythm.';
+  $('result-text').textContent = `${info.correct} of 10 correct · ${info.score} points. ${info.score === 65 ? 'A perfect round. Take a bow.' : 'Ready for another music quiz?'}`;
+  $('next-round').hidden = !(duel && session.round === 0 && info.complete);
+  $('next-round').disabled = locked;
+  $('play-again').hidden = duel && !match.complete;
+  $('play-again').disabled = locked;
+  $('final-results').hidden = !(duel && match.complete);
+  $('reset').hidden = duel && match.complete;
+  if (duel && match.complete) {
+    ['one', 'two'].forEach((suffix, i) => {
+      $('final-name-' + suffix).textContent = session.names[i];
+      $('final-score-' + suffix).textContent = match.rounds[i].score;
+      $('final-correct-' + suffix).textContent = `${match.rounds[i].correct} / 10`;
+    });
+  }
+  if (duel && info.complete) {
+    if (session.round === 0) {
+      $('result-title').textContent = 'Round 1 complete';
+      $('result-text').textContent = `${session.names[0]} scored ${info.score} points. Next up: ${session.names[1]}, with a fresh streak and a joker.`;
+    } else {
+      $('result-title').textContent = match.winner === 'draw' ? 'It’s a draw!' : `${session.names[match.winner]} wins!`;
+      $('result-text').textContent = `${session.names[0]}: ${match.rounds[0].score} points · ${session.names[1]}: ${match.rounds[1].score} points.`;
+    }
+  }
+  $('play-again').textContent = duel ? 'Reset & start a new match ↗' : 'Start a new round ↗';
+  const last = state.answers.at(-1);
+  $('feedback').className = `feedback ${last ? last.correct ? 'right' : 'miss' : ''}`;
+  $('feedback').textContent = info.complete ? 'Round complete — all ten answers recorded.' : last ? `${last.correct ? '✓ Correct!' : '× Wrong — back to 1 point.'}${last.joker ? ' Joker played.' : ''}` : 'Mark your answer to start the round.';
+  save();
+}
+function answer(correct) {
+  if (locked || game.summary(state).complete || $('reset-dialog').open) return;
+  if (session.mode === 'duel' && !canFinishPremiumSession()) { premiumGate(); return; }
+  // Only the unlock UI uses a timer; scoring and advancement happen together.
+  locked = true;
+  session = sessions.transition(session, {type:'answer', correct}); syncHistory(); render();
+  clearTimeout(unlockTimer);
+  unlockTimer = setTimeout(() => { locked = false; render(); if (game.summary(state).complete) $('result-title').focus(); }, 450);
+}
+$('correct').addEventListener('click', () => answer(true));
+$('wrong').addEventListener('click', () => answer(false));
+$('joker').addEventListener('click', () => { if (session.mode === 'duel' && !canFinishPremiumSession()) { premiumGate(); return; } if (!locked) {session = sessions.transition(session, {type:'joker'}); render();} });
+$('undo').addEventListener('click', () => { if (!locked) {session = sessions.transition(session, {type:'undo'}); syncHistory(); render();} });
+$('reset').addEventListener('click', () => {resetMode = null; $('reset-dialog').showModal();});
+$('play-again').addEventListener('click', () => {resetMode = null; $('reset-dialog').showModal();});
+$('confirm-reset').addEventListener('click', () => { clearTimeout(unlockTimer); locked = false; session = sessions.fresh(resetMode || (session.mode === 'duel' && !hasPremium() ? 'solo' : session.mode), session.names); resetMode = null; render(); $('reset-dialog').close(); $('correct').focus(); });
+$('help').addEventListener('click', () => $('help-dialog').showModal());
+$('privacy').addEventListener('click', () => $('privacy-dialog').showModal());
+document.querySelectorAll('[data-close]').forEach(button => button.addEventListener('click', () => button.closest('dialog').close()));
+window.addEventListener('pagehide', () => clearTimeout(unlockTimer));
+window.addEventListener('pageshow', () => { locked = false; render(); });
+function showPremium() {
+  const info = trialRules.status(trial);
+  $('start-trial').hidden = info.started || !premiumPreview || !trialStorageHealthy || corruptTrial;
+  $('premium-message').textContent = !premiumPreview ? 'Trial and paid upgrades are not connected in this hosted build. Open the trial preview to try the features.' : !trialStorageHealthy || corruptTrial ? 'Trial storage is unavailable. Premium cannot be activated safely on this browser.' : info.expired ? 'Your free trial has ended. New premium play is locked until an upgrade. Saved results are still available.' : info.started ? `You have ${info.goesLeft} games and ${info.daysLeft} days remaining, whichever runs out first.` : 'Activate when you are ready. The five-day timer starts on activation.';
+  $('premium-dialog').showModal();
+}
+function premiumGate() { if (hasPremium()) return true; showPremium(); return false; }
+function persistTrial() {
+  try { localStorage.setItem(trialKey,JSON.stringify(trial)); } catch { trialStorageHealthy = false; }
+}
+$('trial-open').addEventListener('click', showPremium);
+$('start-trial').addEventListener('click', () => {
+  if (!premiumPreview || trial.startedAt !== null || corruptTrial || !trialStorageHealthy) return;
+  trial = trialRules.start(trial); persistTrial();
+  $('premium-dialog').close(); render();
+});
+window.addEventListener('focus', () => { trial = trialRules.touch(trial); if (trial.startedAt !== null) persistTrial(); render(); });
+function saveHistory() {
+  try { localStorage.setItem(historyKey, JSON.stringify(records)); }
+  catch { storageAvailable = false; }
+}
+function syncHistory() {
+  const wasCounted = trial.used.includes(session.id);
+  if (!hasPremium() && !wasCounted) return;
+  records = sessions.updateHistory(records, session);
+  saveHistory();
+  if (sessions.summary(session).complete && !wasCounted) {
+    trial = trialRules.consume(trial, session.id); persistTrial();
+  }
+}
+$('duel-mode').addEventListener('click', () => {
+  if (!premiumGate()) return;
+  $('name-one').value = session.names[0]; $('name-two').value = session.names[1];
+  $('name-error').textContent = ''; $('duel-dialog').showModal();
+});
+$('solo-mode').addEventListener('click', () => {
+  if (session.mode === 'solo') return;
+  resetMode = 'solo'; $('reset-dialog').showModal();
+});
+$('duel-form').addEventListener('submit', event => {
+  event.preventDefault(); if (!hasPremium()) return;
+  const names = [$('name-one').value.trim(), $('name-two').value.trim()];
+  if (names.some(n => !n)) { $('name-error').textContent = 'Please enter a name for each contestant.'; return; }
+  if (names[0].toLocaleLowerCase() === names[1].toLocaleLowerCase()) { $('name-error').textContent = 'Use different names so the winner is clear.'; return; }
+  clearTimeout(unlockTimer); locked = false;
+  session = sessions.fresh('duel', names); render(); $('duel-dialog').close(); $('correct').focus();
+});
+$('next-round').addEventListener('click', () => {
+  if (locked || !canFinishPremiumSession()) { if (!locked) premiumGate(); return; }
+  session = sessions.transition(session, {type:'next-round'}); render(); $('correct').focus();
+});
+function renderHistory() {
+  const box = $('history-list'); box.replaceChildren();
+  const allScores = records.flatMap(r => sessions.summary(r.session).rounds.slice(0, r.session.mode === 'duel' ? 2 : 1).map(v => v.score));
+  const metrics = [[records.length, 'saved results'], [allScores.length ? Math.max(...allScores) : '—', 'personal best'], [allScores.length ? (allScores.reduce((a,b) => a+b,0)/allScores.length).toFixed(1) : '—', 'average / round']];
+  $('history-stats').replaceChildren();
+  metrics.forEach(([value, label]) => { const div = document.createElement('div'); const strong = document.createElement('strong'); const small = document.createElement('small'); strong.textContent = value; small.textContent = label; div.append(strong,small); $('history-stats').append(div); });
+  if (!records.length) { const p = document.createElement('p'); p.textContent = 'No completed results yet. Finish a solo round or both head-to-head rounds to save a result.'; box.append(p); }
+  records.slice().reverse().forEach(record => {
+    const info = sessions.summary(record.session); const duel = record.session.mode === 'duel';
+    const entry = document.createElement('article'); entry.className = 'history-entry';
+    const when = document.createElement('small'); when.textContent = new Date(record.finishedAt).toLocaleString();
+    const title = document.createElement('h3'); title.textContent = duel ? `${record.session.names[0]} vs ${record.session.names[1]}` : 'Solo round';
+    const scores = document.createElement('p'); scores.textContent = duel ? `${info.rounds[0].score} – ${info.rounds[1].score} points` : `${info.rounds[0].score} points · ${info.rounds[0].correct}/10 correct`;
+    entry.append(when,title,scores);
+    if (duel) { const result = document.createElement('p'); result.className = 'winner'; result.textContent = info.winner === 'draw' ? 'Draw' : `${record.session.names[info.winner]} wins`; entry.append(result); }
+    box.append(entry);
+  });
+  $('export-history').disabled = !records.length; $('clear-history').disabled = !records.length;
+  $('history-message').textContent = storageAvailable ? 'Scores stay on this device. Export to keep a backup.' : 'Storage is unavailable: these results may be lost when you close this page. Export now to keep them.';
+}
+$('history-open').addEventListener('click', () => { if (!records.length && !premiumGate()) return; renderHistory(); $('history-dialog').showModal(); });
+$('clear-history').addEventListener('click', () => { $('history-dialog').close(); $('delete-history-dialog').showModal(); });
+$('confirm-delete-history').addEventListener('click', () => { records = []; saveHistory(); $('delete-history-dialog').close(); renderHistory(); $('history-dialog').showModal(); });
+$('export-history').addEventListener('click', () => {
+  if (!hasPremium() && !records.length) return;
+  const cell = value => { let text = String(value); if (/^[=+@\-\t\r\n]/.test(text)) text = "'" + text; return '"' + text.replaceAll('"','""') + '"'; };
+  const rows = [['Date','Mode','Round','Contestant','Score','Correct answers','Match result']];
+  records.forEach(record => { const match = sessions.summary(record.session); const duel = record.session.mode === 'duel'; match.rounds.slice(0,duel?2:1).forEach((info,i) => rows.push([record.finishedAt,duel?'Head to head':'Solo',i+1,duel?record.session.names[i]:'Solo',info.score,info.correct,duel?(match.winner==='draw'?'Draw':`${record.session.names[match.winner]} wins`):''])); });
+  const csv = '\uFEFF' + rows.map(row => row.map(cell).join(',')).join('\r\n');
+  const url = URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8;'}));
+  const link = document.createElement('a'); link.href = url; link.download = 'BEATSTREAK-score-history.csv'; document.body.append(link); link.click(); link.remove(); setTimeout(() => URL.revokeObjectURL(url),1000);
+});
+render();
+if ('serviceWorker'  in navigator && location.protocol === 'https:' && location.hostname !== 'appassets.androidplatform.net') navigator.serviceWorker.register('sw.js').catch(() => {});
+</script></body></html>
