@@ -24,6 +24,13 @@ h1{font-size:46px}h1 span{font-size:32px;letter-spacing:-1.2px}.disclaimer{font-
 .final-results{border:1px solid var(--line);border-radius:10px;margin:20px 0 8px;padding:0 12px;text-align:left}.final-results table{width:100%;border-collapse:collapse;table-layout:fixed}.final-results caption{text-align:left;padding:15px 0;color:var(--accent);font-size:11px;font-weight:700;letter-spacing:.4px}.final-results th,.final-results td{padding:13px 5px;border-top:1px solid var(--line);font-size:12px;line-height:1.5;overflow-wrap:anywhere}.final-results thead th{font-size:9px;letter-spacing:.3px;color:var(--muted);text-align:left}.final-results th:first-child{width:16%}.final-results th:nth-child(2){width:42%}.final-results td:nth-child(3){color:var(--accent);font-size:20px;font-weight:800;font-variant-numeric:tabular-nums}.final-results td:nth-child(4){font-size:11px}.results .final-results-note{font-size:10px;line-height:1.7;margin:13px 0 16px;color:#ccc}.results h2:focus{outline:none}@media(max-width:360px){.final-results{padding:0 7px}.final-results th,.final-results td{font-size:10px;padding:10px 3px}.final-results thead th{font-size:8px}.final-results td:nth-child(3){font-size:18px}}
 </style>
 
+<link rel="icon" type="image/png" sizes="192x192" href="/beatstreak-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/beatstreak-512.png">
+<link rel="apple-touch-icon" href="/beatstreak-192.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="apple-mobile-web-app-title" content="BEATSTREAK">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
 </head>
 <body>
 <div class="shell">
@@ -357,3 +364,4 @@ $('export-history').addEventListener('click', () => {
 render();
 if ('serviceWorker'  in navigator && location.protocol === 'https:' && location.hostname !== 'appassets.androidplatform.net') navigator.serviceWorker.register('sw.js').catch(() => {});
 </script></body></html>
+
